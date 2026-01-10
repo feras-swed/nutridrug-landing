@@ -167,15 +167,27 @@ html[lang="en"] body {
     color: var(--primary-blue);
 }
 
-@media (max-width: 480px) {
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
     .brand-name {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .brand-name {
-        display: none;
+        font-size: 0.9rem;
     }
 }
 
