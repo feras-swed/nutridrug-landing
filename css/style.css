@@ -131,9 +131,16 @@ html[lang="en"] body {
     padding: var(--spacing-md) var(--spacing-lg);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .nav-container {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        /* Ensure enough horizontal space from borders */
     }
 }
 
@@ -1434,9 +1441,10 @@ html[dir="ltr"] .privacy-list li::before {
     }
 }
 
-/* === Privacy Policy Button in Navbar === */
+/* === Navbar Buttons in Navbar === */
 .privacy-link,
-.home-link {
+.home-link,
+.about-link {
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: 0.9rem;
 }
@@ -1444,18 +1452,24 @@ html[dir="ltr"] .privacy-list li::before {
 @media (max-width: 768px) {
 
     .privacy-link span,
-    .home-link span {
+    .home-link span,
+    .about-link span,
+    .lang-switch span#langText {
         display: none;
     }
 
     .privacy-link,
-    .home-link {
+    .home-link,
+    .about-link,
+    .lang-switch {
         padding: var(--spacing-sm);
         min-width: auto;
     }
 
     .privacy-link i,
-    .home-link i {
+    .home-link i,
+    .about-link i,
+    .lang-switch i {
         margin: 0;
     }
 }
