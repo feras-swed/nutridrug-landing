@@ -1,5 +1,5 @@
 // ===================================
-// NutriDrug Interact Landing Page
+// التداخلات الغذائية الدوائية Nutidrug interact Landing Page
 // JavaScript Functionality
 // ==================================
 
@@ -18,20 +18,20 @@ class LanguageManager {
     setLanguage(lang) {
         this.currentLang = lang;
         const html = document.documentElement;
-        
+
         // Set language and direction
         html.setAttribute('lang', lang);
         html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-        
+
         // Update all translatable elements
         this.updateContent();
-        
+
         // Update language button text
         const langText = document.getElementById('langText');
         if (langText) {
             langText.textContent = lang === 'ar' ? 'EN' : 'ع';
         }
-        
+
         // Save preference
         localStorage.setItem('language', lang);
     }
@@ -74,7 +74,7 @@ class SmoothScroll {
                 if (target) {
                     const navHeight = document.querySelector('.navbar').offsetHeight;
                     const targetPosition = target.offsetTop - navHeight;
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -124,7 +124,7 @@ class AnimateOnScroll {
     init() {
         // Get all elements to animate
         this.elements = document.querySelectorAll('.feature-card, .about-card, .stat');
-        
+
         // Create intersection observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -154,17 +154,17 @@ class NavbarScroll {
         if (!this.navbar) return;
 
         let lastScroll = 0;
-        
+
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
-            
+
             // Add shadow on scroll
             if (currentScroll > 10) {
                 this.navbar.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
             } else {
                 this.navbar.style.boxShadow = '0 1px 2px 0 rgb(0 0 0 / 0.05)';
             }
-            
+
             lastScroll = currentScroll;
         });
     }
@@ -188,12 +188,12 @@ class DownloadHandler {
 
     handleDownload() {
         const currentLang = document.documentElement.getAttribute('lang');
-        const message = currentLang === 'ar' 
+        const message = currentLang === 'ar'
             ? 'رابط التحميل سيكون متاحاً قريباً. سيتم إضافة الرابط بعد رفع ملف APK إلى GitHub Releases.'
             : 'Download link will be available soon. The link will be added after uploading the APK file to GitHub Releases.';
-        
+
         alert(message);
-        
+
         // TODO: Replace with actual download link from GitHub Releases
         // window.location.href = 'YOUR_GITHUB_RELEASE_URL';
     }
@@ -225,27 +225,27 @@ class PerformanceOptimizations {
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize language manager
     new LanguageManager();
-    
+
     // Initialize smooth scroll
     new SmoothScroll();
-    
+
     // Initialize scroll to top button
     new ScrollToTop();
-    
+
     // Initialize scroll animations
     new AnimateOnScroll();
-    
+
     // Initialize navbar scroll effect
     new NavbarScroll();
-    
+
     // Initialize download handler
     new DownloadHandler();
-    
+
     // Initialize performance optimizations
     new PerformanceOptimizations();
-    
+
     // Log successful initialization
-    console.log('%c✅ NutriDrug Landing Page Initialized', 'color: #10b981; font-size: 16px; font-weight: bold;');
+    console.log('%c✅ Nutidrug interact Landing Page Initialized', 'color: #10b981; font-size: 16px; font-weight: bold;');
     console.log('%c📱 Developer: Feras Swed', 'color: #2563eb; font-size: 14px;');
 });
 

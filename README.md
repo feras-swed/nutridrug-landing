@@ -1,6 +1,6 @@
-# NutriDrug Interact - Landing Page
+# التداخلات الغذائية الدوائية Nutidrug interact - Landing Page
 
-Modern, bilingual landing page for the NutriDrug Interact mobile application.
+Modern, bilingual landing page for the التداخلات الغذائية الدوائية Nutidrug interact mobile application.
 
 ## 🌐 Live Demo
 
@@ -8,7 +8,7 @@ Modern, bilingual landing page for the NutriDrug Interact mobile application.
 
 ## 📱 About
 
-This landing page provides information and download access for the NutriDrug Interact app - a comprehensive offline medical guide for drug-food interactions.
+This landing page provides information and download access for the التداخلات الغذائية الدوائية Nutidrug interact app - a comprehensive offline medical guide for drug-food interactions.
 
 ## ✨ Features
 
@@ -55,7 +55,7 @@ This landing page provides information and download access for the NutriDrug Int
 6. Publish release
 7. Copy the download URL (it will look like this):
    ```
-   https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutridrug-interact.apk
+   https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk
    ```
 8. Update `js/main.js` line ~115:
    ```javascript
@@ -63,7 +63,7 @@ This landing page provides information and download access for the NutriDrug Int
    // window.location.href = 'YOUR_GITHUB_RELEASE_URL';
    
    // With:
-   window.location.href = 'https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutridrug-interact.apk';
+   window.location.href = 'https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk';
    ```
 9. Also update `index.html` to remove the "coming soon" note
 
