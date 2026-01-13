@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feras-swed.github.io/nutridrug-landing/sitemap.xml

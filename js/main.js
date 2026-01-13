@@ -153,6 +153,9 @@ class NavbarScroll {
     init() {
         if (!this.navbar) return;
 
+        // Highlight active link based on current page
+        this.highlightActiveLink();
+
         let lastScroll = 0;
 
         window.addEventListener('scroll', () => {
@@ -168,6 +171,20 @@ class NavbarScroll {
             lastScroll = currentScroll;
         });
     }
+
+    highlightActiveLink() {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (currentPath.endsWith(href) || (currentPath === '/' && href === 'index.html') || (currentPath.endsWith('/') && href === 'index.html')) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
 }
 
 // === Download Button Handler ===
@@ -177,11 +194,13 @@ class DownloadHandler {
     }
 
     init() {
-        const downloadBtn = document.getElementById('downloadBtn');
-        if (downloadBtn) {
-            downloadBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.handleDownload();
+        const downloadBtns = document.querySelectorAll('.download-btn');
+        if (downloadBtns.length > 0) {
+            downloadBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.handleDownload();
+                });
             });
         }
     }

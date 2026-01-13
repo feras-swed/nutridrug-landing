@@ -1442,33 +1442,45 @@ html[dir="ltr"] .privacy-list li::before {
 }
 
 /* === Navbar Buttons in Navbar === */
-.privacy-link,
-.home-link,
-.about-link {
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
     padding: var(--spacing-sm) var(--spacing-md);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue);
+    background: var(--gray-50);
+}
+
+.nav-link.active {
+    color: var(--primary-blue);
+    background: rgba(37, 99, 235, 0.05);
+    border-color: rgba(37, 99, 235, 0.1);
 }
 
 @media (max-width: 768px) {
 
-    .privacy-link span,
-    .home-link span,
-    .about-link span,
+    .nav-link span,
     .lang-switch span#langText {
         display: none;
     }
 
-    .privacy-link,
-    .home-link,
-    .about-link,
+    .nav-link,
     .lang-switch {
         padding: var(--spacing-sm);
         min-width: auto;
     }
 
-    .privacy-link i,
-    .home-link i,
-    .about-link i,
+    .nav-link i,
     .lang-switch i {
         margin: 0;
     }
