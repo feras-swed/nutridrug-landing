@@ -1073,7 +1073,7 @@ html[dir="ltr"] .steps-list li::before {
 }
 
 .footer-description {
-    color: var(--gray-400);
+    color: var(--gray-300);
     line-height: 1.7;
 }
 
@@ -1089,7 +1089,7 @@ html[dir="ltr"] .steps-list li::before {
 }
 
 .footer-links a {
-    color: var(--gray-400);
+    color: var(--gray-300);
     text-decoration: none;
     transition: var(--transition-base);
     display: block;
@@ -1110,7 +1110,7 @@ html[dir="ltr"] .steps-list li::before {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    color: var(--gray-400);
+    color: var(--gray-300);
     text-decoration: none;
     transition: var(--transition-base);
 }
@@ -1765,7 +1765,7 @@ html[dir="ltr"] .privacy-list li::before {
 }
 
 .supervisor-title {
-    color: var(--primary-green);
+    color: var(--primary-green-dark);
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
 }
@@ -1813,7 +1813,7 @@ html[dir="ltr"] .privacy-list li::before {
 }
 
 .developer-title {
-    color: var(--primary-green);
+    color: var(--primary-green-dark);
     font-weight: 600;
     margin-bottom: var(--spacing-md);
 }
