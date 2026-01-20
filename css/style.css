@@ -2040,3 +2040,94 @@ html[dir="ltr"] .privacy-list li::before {
         font-size: 2rem;
     }
 }
+
+/* === Feedback Section === */
+.feedback-section {
+    background-color: var(--gray-50);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.feedback-card {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.feedback-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.feedback-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feedback-text {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+}
+
+/* Floating Feedback Button */
+.floating-feedback {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-2xl);
+    text-decoration: none;
+    z-index: 999;
+    transition: var(--transition-base);
+    font-size: 1.5rem;
+}
+
+.floating-feedback:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.floating-feedback .btn-text {
+    display: none;
+    position: absolute;
+    right: 70px;
+    background: var(--gray-800);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.floating-feedback:hover .btn-text {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .floating-feedback {
+        bottom: 90px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .floating-feedback .btn-text {
+        display: none !important;
+    }
+}
