@@ -4,7 +4,7 @@ Modern, bilingual landing page for the التداخلات الغذائية ال�
 
 ## 🌐 Live Demo
 
-**GitHub Pages URL:** `https://[your-username].github.io/nutridrug-landing`
+**GitHub Pages URL:** `https://feras-swed.github.io/nutridrug-landing/index.html`
 
 ## 📱 About
 
@@ -35,13 +35,13 @@ This landing page provides information and download access for the التداخ�
    git add .
    git commit -m "Initial commit: Landing page"
    git branch -M main
-   git remote add origin https://github.com/[your-username]/nutridrug-landing.git
+   git remote add origin https://github.com/feras-swed/nutridrug-landing.git
    git push -u origin main
    ```
 3. Go to repository Settings → Pages
 4. Set Source to: `main` branch / `root`
 5. Wait 1-2 minutes for deployment
-6. Visit: `https://[your-username].github.io/nutridrug-landing`
+6. Visit: `https://feras-swed.github.io/nutridrug-landing`
 
 ## 📦 Adding the APK Download Link
 
@@ -55,7 +55,7 @@ This landing page provides information and download access for the التداخ�
 6. Publish release
 7. Copy the download URL (it will look like this):
    ```
-   https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk
+   https://github.com/feras-swed/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk
    ```
 8. Update `js/main.js` line ~115:
    ```javascript
@@ -63,7 +63,7 @@ This landing page provides information and download access for the التداخ�
    // window.location.href = 'YOUR_GITHUB_RELEASE_URL';
    
    // With:
-   window.location.href = 'https://github.com/[username]/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk';
+   window.location.href = 'https://github.com/feras-swed/nutridrug-landing/releases/download/v1.0.0/nutidrug-interact.apk';
    ```
 9. Also update `index.html` to remove the "coming soon" note
 
